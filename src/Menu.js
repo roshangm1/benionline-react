@@ -3,10 +3,6 @@ import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 class Menu extends Component {
-
-  onMenuPressed() {
-    console.log('Heloo');
-  }
   render() {
     return (
       <View style={styles.container}>
