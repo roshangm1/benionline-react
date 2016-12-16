@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Actions } from 'react-native-router-flux';
 import { View, ListView } from 'react-native';
 import { fetchFromInternet } from '../actions';
 import { Spinner } from './common';
@@ -13,7 +14,8 @@ class NewsList extends Component {
 //  }
 
   componentWillMount() {
-    this.props.fetchFromInternet(this.props.url);
+    Actions.refresh({ key: 'drawer', open: false });
+    this.props.fetchFromInternet(this.props.url || 'http://myagdikali.com/api/get_category_posts/?slug=news&count=20');
     this.createDataSource(this.props);
   }
 

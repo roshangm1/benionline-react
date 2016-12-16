@@ -14,6 +14,7 @@ class DrawerLayout extends Component {
         onPress={() => {
           Actions.refresh({ key: 'drawer', open: true });
         }}
+        style={{ alignSelf: 'stretch' }}
       >
         <Icon
           name='ios-menu'
