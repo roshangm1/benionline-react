@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 class Menu extends Component {
   render() {
     return (
-
+  
       <ScrollView style={styles.container}>
       <View style={styles.container}>
           <Image
@@ -24,7 +24,7 @@ class Menu extends Component {
           >
           <View style={{ flexDirection: 'row' }}>
             <Icon name='ios-menu' size={24} style={styles.iconStyle} />
-            <Text style={this.state.active ? styles.textStyle : styles.textStyle}>ताजा समाचार</Text>
+            <Text style={styles.textStyle}>ताजा समाचार</Text>
           </View>
 
           </TouchableOpacity>
@@ -41,7 +41,7 @@ class Menu extends Component {
             <Icon name='ios-menu' size={24} style={styles.iconStyle} />
             <Text style={styles.textStyle}>राष्ट्रिय समाचार</Text>
           </View>
-          <View style={{ width: null, backgroundColor: '#ddd', height: 1 }} />
+          <View style={{ width: null, backgroundColor: '#ddd', height: 1, marginTop: 5, marginBottom: 5 }} />
 
           </TouchableOpacity>
 
@@ -105,7 +105,7 @@ class Menu extends Component {
 
           </TouchableOpacity>
 
-          <View style={{ width: null, backgroundColor: '#ddd', height: 1 }} />
+          <View style={{ width: null, backgroundColor: '#ddd', height: 1, marginTop: 5, marginBottom: 5 }} />
 
           <TouchableOpacity
             onPress={() =>
